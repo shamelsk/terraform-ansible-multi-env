@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Multi-Environment Terraform-Ansible Project</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f172a,#1e293b,#111827);
+    color:white;
+    min-height:100vh;
+}
+
+/* Navbar */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    backdrop-filter:blur(10px);
+    background:rgba(255,255,255,0.05);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* Hero Section */
+
+.hero{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+.hero p{
+    max-width:800px;
+    font-size:1.2rem;
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+.status{
+    margin-top:30px;
+    background:#16a34a;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:bold;
+    box-shadow:0 0 20px rgba(22,163,74,.4);
+}
+
+/* Cards */
+
+.container{
+    width:85%;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin:60px 0 30px;
+    font-size:2rem;
+    color:#38bdf8;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+    padding:25px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#38bdf8;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#38bdf8;
+}
+
+.card p{
+    color:#cbd5e1;
+    line-height:1.6;
+}
+
+/* Architecture */
+
+.architecture{
+    margin-top:50px;
+}
+
+.architecture ul{
+    list-style:none;
+}
+
+.architecture li{
+    padding:12px;
+    margin:10px 0;
+    background:rgba(255,255,255,0.05);
+    border-left:4px solid #38bdf8;
+}
+
+/* GitHub */
+
+.github{
+    text-align:center;
+    margin:60px 0;
+}
+
+.github a{
+    display:inline-block;
+    padding:15px 30px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.github a:hover{
+    transform:scale(1.05);
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+    background:rgba(255,255,255,0.05);
+    color:#94a3b8;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">🚀 Shamel DevOps</div>
+
+    <ul>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#github">GitHub</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+
+    <h1>Multi-Environment <span>Terraform-Ansible</span> Project</h1>
+
+    <p>
+        This project demonstrates automated infrastructure provisioning
+        and configuration management using Terraform and Ansible.
+        Multiple environments are managed through Infrastructure as Code,
+        enabling scalable, repeatable, and reliable deployments on AWS.
+    </p>
+
+    <div class="status">
+        ✅ Project Successfully Deployed
+    </div>
+
+</section>
+
+<div class="container">
+
+    <h2 class="section-title" id="project">
+        Project Overview
+    </h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Terraform</h3>
+            <p>
+                Provisioned AWS infrastructure including EC2 instances,
+                networking components, and environment-specific resources
+                using Infrastructure as Code.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Ansible</h3>
+            <p>
+                Automated server configuration, package installation,
+                service management, and application deployment through
+                Ansible playbooks.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Multi-Environment</h3>
+            <p>
+                Separate development, testing, and production
+                environments managed with reusable Terraform modules
+                and Ansible inventories.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>AWS Cloud</h3>
+            <p>
+                Cloud infrastructure hosted on AWS with automated
+                provisioning and configuration workflows.
+            </p>
+        </div>
+
+    </div>
+
+    <h2 class="section-title" id="tools">
+        Technologies Used
+    </h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>AWS</h3>
+            <p>Cloud Infrastructure Platform</p>
+        </div>
+
+        <div class="card">
+            <h3>Terraform</h3>
+            <p>Infrastructure as Code</p>
+        </div>
+
+        <div class="card">
+            <h3>Ansible</h3>
+            <p>Configuration Management</p>
+        </div>
+
+        <div class="card">
+            <h3>Linux</h3>
+            <p>Server Administration</p>
+        </div>
+
+        <div class="card">
+            <h3>Git & GitHub</h3>
+            <p>Version Control</p>
+        </div>
+
+        <div class="card">
+            <h3>DevOps</h3>
+            <p>Automation & Deployment</p>
+        </div>
+
+    </div>
+
+    <div class="architecture" id="architecture">
+
+        <h2 class="section-title">
+            Deployment Flow
+        </h2>
+
+        <ul>
+            <li>Developer Pushes Code to GitHub</li>
+            <li>Terraform Creates AWS Infrastructure</li>
+            <li>Ansible Configures EC2 Instances</li>
+            <li>Application Deployment Executes</li>
+            <li>Environment Validation Completed</li>
+            <li>Production Ready Infrastructure Available</li>
+        </ul>
+
+    </div>
+
+    <div class="github" id="github">
+
+        <h2 class="section-title">
+            Project Repository
+        </h2>
+
+        <a href="https://github.com/shamelsk"
+           target="_blank">
+           View GitHub Profile
+        </a>
+
+    </div>
+
+</div>
+
+<footer>
+
+    <h3>Shamel Khan</h3>
+
+    <p>
+        DevOps Engineer | Terraform | Ansible | AWS | Linux
+    </p>
+
+    <br>
+
+    <p>
+        GitHub: github.com/shamelsk
+    </p>
+
+    <p>
+        © 2026 Shamel Khan. All Rights Reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>
